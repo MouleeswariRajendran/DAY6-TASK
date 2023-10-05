@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//write a class to calculate the uber price.
+
+ 
+let baseFee = .44
+let cities = ["salem", "chennai", "erode", ]
+let uberRates = [5, 10, 15]
+
+
+let customerName = "monisha" 
+let customerCity = "chennai" 
+
+console.log("Hello", customerName+ ", welcome to the Uber Rate Program")
+
+function getRate(customerCity) {
+  
+  function uberRate(customerCity, index) {
+    
+    let finalRate = (uberRates[index]) * baseFee
+    return finalRate
+  }
+
+  console.log(customerCity, "rate is:", uberRate(customerCity, cities.indexOf(customerCity)))
+}
+
+getRate(customerCity)
+
+    </script>
+</body>
+</html>

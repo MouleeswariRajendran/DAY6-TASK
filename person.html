@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Write a “person” class to hold all the details.
+
+
+class Person {
+
+  constructor(firstName, lastName,age,education,state,country) {
+
+     console.log(this)
+
+    this.firstName = "Monisha"
+
+    this.lastName = "Moni"
+
+    this.age=27
+
+    this.education="B.E(CSE)"
+
+    this.city="chennai"
+
+    this.country="India"
+
+  }
+  
+  greet(){
+
+console.log(
+    `My name is ${firstName} ${lastName} and my age is ${age}.my education is ${education} my city is ${city} my country is ${country}`
+);
+
+  }
+
+}
+
+const person = new Person()
+
+
+    </script>
+</body>
+</html>
